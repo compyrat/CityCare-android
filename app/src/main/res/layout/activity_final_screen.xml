@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.albertribas_ericcaballero_albertmarlet.proyecto_final.FinalScreen"
+    android:orientation="vertical"
+    android:weightSum="150">
+
+    <TextView android:text="Muchas gracias por su colaboración. La incidencia ha sido tramitada al Ayuntamiento.\n\nPuede consultar el seguimiento desde el menú principal."
+        android:layout_gravity="center"
+        android:lines="8"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140"/>
+
+    <Button android:text="Volver al menú principal"
+        android:id="@+id/back_menu"
+        android:background="@drawable/round_corner_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+</LinearLayout>

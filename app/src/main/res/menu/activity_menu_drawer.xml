@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Nueva Incidencia" />
+        <item
+            android:id="@+id/nav_remove"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:title="Borrar Incidencia" />
+        <item
+            android:id="@+id/nav_tracing"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:title="Seguimiento" />
+    </group>
+
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/nav_signin"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="Iniciar Sesion" />
+        </menu>
+    </item>
+
+</menu>
