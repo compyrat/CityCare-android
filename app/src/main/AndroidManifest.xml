@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.albertribas_ericcaballero_albertmarlet.proyecto_final">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -81,11 +82,26 @@
             </intent-filter>
         </activity>
         <activity
+            tools:replace="android:theme"
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" ><!-- ATTENTION: This intent was auto-generated. Follow instructions at
+  https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary. -->
+                <data
+                    android:host="[ENTER-YOUR-HTTP-HOST-HERE]"
+                    android:pathPrefix="/facebook"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
